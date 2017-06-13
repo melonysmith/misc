@@ -1,0 +1,96 @@
+<!--
+* Created by: Melony Smith
+* August 13th, 2016
+* Server-Side Languages
+* Week 2: Fruits DB App
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Fruit Ads API</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div id="header">
+    <h1>Melony's Fruit Database App</h1>
+</div>
+
+<br /><br />
+
+<div id="intro">
+    <p>Please enter a fruit and it's color for inclusion in the database.</p>
+</div>
+
+<br />
+
+<form action="fruits.php" method="post">
+
+    <fieldset>
+
+        <input type="text" name="fruitname" id="inputfield" placeholder="enter fruit name" value="" required />
+        <br /><br />
+        <input type="text" name="fruitcolor" id="inputfield" placeholder="enter fruit color" value="" required />
+        <br /><br />
+        <input type="text" name="fruitimage" id="inputfield" placeholder="image url" value="" required />
+
+        <br /><br />
+
+        <input type="submit" value="Add Fruit" name="submit" id="add">
+
+    </fieldset>
+</form>
+
+
+<br /><br />
+    <div id="displayfruit">
+
+        <table>
+
+            <thead>
+
+            <tr>
+                <th>Fruit ID</th>
+                <th>Fruit Name</th>
+                <th>Fruit Color</th>
+                <th>Action</th>
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td id="id">1</td>
+                    <td>Apple</td>
+                    <td>Red</td>
+                    <td id="delete"><a href="deletefruit.php?id=1">Delete</a><br /></td>
+                </tr>
+
+                <tr>
+                    <td id="id">2</td>
+                    <td>Apple</td>
+                    <td>Green</td>
+                    <td id="delete"><a href="deletefruit.php?id=1">Delete</a><br /></td>
+                </tr>
+
+                <tr>
+                    <td id="id">3</td>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td id="delete"><a href="deletefruit.php?id=1">Delete</a><br /></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
